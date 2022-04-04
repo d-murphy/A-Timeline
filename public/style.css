@@ -1,3 +1,24 @@
-h1 {
-    background-color: aqua;
+body {
+    height: 100%
+}
+
+.title-banner {
+    background: rgb(66,128,233);
+    background: radial-gradient(circle, rgba(66,128,233,1) 52%, rgba(37,92,154,1) 100%);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.event-section-right {
+    align-self: flex-end;
+}
+
+.event-section-left {
+    align-self: flex-start;
+}
+
+.event-body {
+    font-size: large; 
+    border: 1px solid black;
+    border-radius: 5px;
 }
