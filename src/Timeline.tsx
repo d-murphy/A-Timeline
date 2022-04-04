@@ -18,14 +18,18 @@ function Timeline(props: TimelineProps) {
       <h1 className='year-heading display-4 pt-4'>
         <b>{year.year}</b>
       </h1>
+      <div className='year-timeline'></div>
+      <div className='year-timeline-filled'></div>
       <div className='years-events'>
         {
           year.events.map((el: TimelineEvent, ind: number) => {
             let eventSectionNameWithSide: string = ind % 2 == 0 ? 'event-section-right' : 'event-section-left';
-            return <div key={`${year.year}-${ind}`} className={`${eventSectionNameWithSide} w-50`}>
-              <div className='event-marker'>{el.eventMarker ? <img className='event-marker-image' src={el.eventMarker} /> : <div className='event-marker-no-image'></div>}</div>
-              <div className='event-header'>{monthNames[el.date.getMonth()]}</div>
-              <div className='event-body p-2 '>{el.text}</div>
+            return <div key={`${year.year}-${ind}`} className={`${eventSectionNameWithSide} event `}>
+              <div className='event-marker '>{el.eventMarker ? <img className='event-marker-image' src={el.eventMarker} /> : <div className='event-marker-no-image'></div>}</div>
+              <div className=''>
+                <div className='event-header'>{monthNames[el.date.getMonth()]}</div>
+                <div className='event-body p-2 '>{el.text}</div>
+              </div>
             </div>
           })}
       </div>
