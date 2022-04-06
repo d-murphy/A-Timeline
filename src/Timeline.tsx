@@ -12,12 +12,36 @@ const monthNames = ["January", "February", "March", "April", "May", "June",
 function Timeline(props: TimelineProps) {
     const timelineData = getTimeline(props.id);
     const groupByYear = manipTimelineData(timelineData.events);
+    const [y, setY] = React.useState(window.scrollY);
+
+    const handleScroll = () => {
+        const position = window.pageYOffset;
+        document.documentElement.style.setProperty('--scroll-height', `${position}px`);
+        var body = document.body,
+        html = document.documentElement;
+
+        var height = Math.max( body.scrollHeight, body.offsetHeight, 
+                       html.clientHeight, html.scrollHeight, html.offsetHeight );
+        document.documentElement.style.setProperty('--page-height', `${height}px`);
+
+        setY(position);
+    };
+    
+    React.useEffect(() => {
+        window.addEventListener('scroll', handleScroll, { passive: true });
+    
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     const events = Object.values(groupByYear).map((year: YearGroup) => {
 
     return <div className='year-section container'>
       <h1 className='year-heading display-4 pt-5'>
         <b>{year.year}</b>
       </h1>
+      <p>Here's the y: {y}</p>
       <div className='year-timeline'></div>
       <div className='year-timeline-filled'></div>
       <div className='years-events'>

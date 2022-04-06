@@ -2,6 +2,11 @@ body {
     height: 100%
 }
 
+:root {
+    --scroll-height: 0;
+    --page-height: 0;
+}
+
 .title-banner {
     background: rgb(66,128,233);
     background: radial-gradient(circle, rgba(66,128,233,1) 52%, rgba(37,92,154,1) 100%);
@@ -36,7 +41,7 @@ body {
 .year-timeline-filled {
     background-color: green;
     display: block;
-    height: 40%;
+    height: calc(var(--scroll-height) );
     left: 50%;
     position: fixed;
     width: 3px;

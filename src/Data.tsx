@@ -52,7 +52,27 @@ function getMockData(id:number) : TimelineInstance {
                 {
                     text: 'The FINAL event', 
                     date: new Date('4/10/2016')
+                },                {
+                    text: 'here is the first event in the timeline. here is the first event in the timeline. here is the first event in the timeline. here is the first event in the timeline', 
+                    date: new Date('1/4/2017')
+                }, 
+                {
+                    text: 'here is the second event in the timeline. here is the first event in the timeline. here is the first event in the timeline', 
+                    date: new Date('3/4/2017')
+                }, 
+                {
+                    text: 'here is the third event in the timeline. here is the first event in the timeline. here is the first event in the timeline.', 
+                    date: new Date('3/4/2017')
+                }, 
+                {
+                    text: 'another event. here is the first event in the timeline. here is the first event in the timeline. here is the first event in the timeline', 
+                    date: new Date('3/10/2017')
+                }, 
+                {
+                    text: 'The FINAL event', 
+                    date: new Date('4/10/2018')
                 }
+
             ]
         },
         2: {            
