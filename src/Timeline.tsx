@@ -10,12 +10,12 @@ const monthNames = ["January", "February", "March", "April", "May", "June",
 ];
 
 function Timeline(props: TimelineProps) {
-  const timelineData = getTimeline(props.id);
-  const groupByYear = manipTimelineData(timelineData.events);
-  const events = Object.values(groupByYear).map((year: YearGroup) => {
+    const timelineData = getTimeline(props.id);
+    const groupByYear = manipTimelineData(timelineData.events);
+    const events = Object.values(groupByYear).map((year: YearGroup) => {
 
     return <div className='year-section container'>
-      <h1 className='year-heading display-4 pt-4'>
+      <h1 className='year-heading display-4 pt-5'>
         <b>{year.year}</b>
       </h1>
       <div className='year-timeline'></div>
@@ -23,11 +23,11 @@ function Timeline(props: TimelineProps) {
       <div className='years-events'>
         {
           year.events.map((el: TimelineEvent, ind: number) => {
-            let eventSectionNameWithSide: string = ind % 2 == 0 ? 'event-section-right' : 'event-section-left';
-            return <div key={`${year.year}-${ind}`} className={`${eventSectionNameWithSide} event `}>
+            let eventSide: string = ind % 2 == 0 ? 'right' : 'left';
+            return <div key={`${year.year}-${ind}`} className={`event-section-${eventSide} event `}>
               <div className='event-marker '>{el.eventMarker ? <img className='event-marker-image' src={el.eventMarker} /> : <div className='event-marker-no-image'></div>}</div>
               <div className=''>
-                <div className='event-header'>{monthNames[el.date.getMonth()]}</div>
+                <div className={`event-header event-header-${eventSide}`}>{monthNames[el.date.getMonth()]}</div>
                 <div className='event-body p-2 '>{el.text}</div>
               </div>
             </div>
