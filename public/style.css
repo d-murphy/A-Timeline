@@ -41,7 +41,8 @@ body {
 .year-timeline-filled {
     background-color: green;
     display: block;
-    height: calc(var(--scroll-height) );
+    height: calc( (var(--scroll-height) * .15) + 30% );
+    /* height: calc( ( var(--page-height) - var(--scroll-height) ) + 15% ); */
     left: 50%;
     position: fixed;
     width: 3px;
@@ -71,4 +72,8 @@ body {
 
 .event-header-right {
     padding-left: 10px;
+}
+
+.big-bottom-padding {
+    padding-bottom: 200px;
 }

@@ -14,6 +14,10 @@ No longer a goal?:
 * [cofiguring typescript](https://dev.to/jacopobonta/react-typescript-webpack-3c6l)
 
 ToDo: 
-* add data for header - title, subtitle and emoji
+
+* conditional class based on page height  for scroll
+* add structure to src
+* add file with types and export import where appropriate. 
+
 * control css for timeline
 * add timeline edit / create form with timeline title, subtitle and emoji and event dates, text and emoji
