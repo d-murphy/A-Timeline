@@ -12,25 +12,28 @@ function Timeline(props: TimelineProps) {
   const timelineData = getTimeline(props.id);
   const groupByYear = manipTimelineData(timelineData.events);
 
-  const [y, setY] = React.useState(window.scrollY);
+  const [scrollType, setScrollType] = React.useState('-small-page')
 
   const handleScroll = () => {
       const position = window.pageYOffset;
-      document.documentElement.style.setProperty('--scroll-height', `${position}px`);
+      document.documentElement.style.setProperty('--scroll-height', `${position}`);
+
       var body = document.body,
       html = document.documentElement;
-
       var height = Math.max( body.scrollHeight, body.offsetHeight, 
                       html.clientHeight, html.scrollHeight, html.offsetHeight );
-      document.documentElement.style.setProperty('--page-height', `${height}px`);
-
-      setY(position);
+      document.documentElement.style.setProperty('--page-height', `${height}`);
+      let scrollTypeName = height < 1250 ? 'ytf-x-small-page' : 
+        height < 1750 ? 'ytf-small-page' : 
+        height < 2500 ? 'ytf-medium-page' : 'ytf-large-page'; 
+      setScrollType(scrollTypeName); 
   };
   
   React.useEffect(() => {
       window.addEventListener('scroll', handleScroll, { passive: true });
   
       return () => {
+          console.log('useEffect event listener is being removed.')
           window.removeEventListener('scroll', handleScroll);
       };
   }, []);
@@ -42,7 +45,7 @@ function Timeline(props: TimelineProps) {
     <div className='big-bottom-padding'>
       <Banner title={timelineData.title} subtitle={timelineData.subtitle}/>
       <div className='year-timeline'></div>
-      <div className='year-timeline-filled'></div>
+      <div className={`year-timeline-filled ${scrollType}`}></div>
       {events}
     </div>
   )

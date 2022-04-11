@@ -20,16 +20,48 @@ body {
     max-width: 1050px;
 }
 
+.event {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* .event-marker-right {
+    padding-right: 20px;
+    position: 'relative';
+    left: '-20px';
+}
+
+
+.event-marker-left {
+    padding-left: 20px;
+} */
+
+.event-marker-no-image-left,
+.event-marker-no-image-right {
+    font-size: 35px;
+    z-index: 5;
+}
+
+.event-marker-no-image-left {
+    position: relative; 
+    left: 17px;
+}
+
+.event-marker-no-image-right {
+    position: relative;
+    left: -14px;
+}
+
+
 .event-section-right {
     position: relative;
     left: 50%;
-    max-width: 500px;
-    padding-left: 20px;
+    max-width: 50%;
 }
 
 .event-section-left {
-    max-width: 500px;
-    padding-left:0px;
+    max-width: 50%;
 }
 
 .event-body {
@@ -41,14 +73,31 @@ body {
 .year-timeline-filled {
     background-color: green;
     display: block;
-    height: calc( (var(--scroll-height) * .15) + 30% );
-    /* height: calc( ( var(--page-height) - var(--scroll-height) ) + 15% ); */
     left: 50%;
     position: fixed;
     width: 3px;
     top:0px;
     z-index: 2;
 }
+
+.ytf-large-page {
+    height: calc( (var(--scroll-height) / var(--page-height)) * 110% );
+}
+
+.ytf-medium-page {
+    height: calc( (var(--scroll-height) / var(--page-height)) * 160% );
+}
+
+.ytf-small-page {
+    height: calc( (var(--scroll-height) / var(--page-height)) * 200% );
+}
+
+
+.ytf-x-small-page {
+    height: calc( (var(--scroll-height) / var(--page-height)) * 350% );
+}
+
+
 
 .year-timeline {
     background-color: #f7f8f8;

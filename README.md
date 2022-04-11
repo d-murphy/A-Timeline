@@ -15,9 +15,9 @@ No longer a goal?:
 
 ToDo: 
 
-* conditional class based on page height  for scroll
-* add structure to src
+* work on emoji markers
+* add footer
+* remove month border
 * add file with types and export import where appropriate. 
 
-* control css for timeline
 * add timeline edit / create form with timeline title, subtitle and emoji and event dates, text and emoji
