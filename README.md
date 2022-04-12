@@ -19,5 +19,6 @@ ToDo:
 * add footer
 * remove month border
 * add file with types and export import where appropriate. 
+* change colors of month names, borders and bullets
 
 * add timeline edit / create form with timeline title, subtitle and emoji and event dates, text and emoji

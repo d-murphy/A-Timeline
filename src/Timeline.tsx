@@ -61,7 +61,7 @@ type GroupByYear = {
 type TimelineEvent = {
   text: string,
   date: Date,
-  eventMarker?: string
+  eventMarker?: number
 }
 
 

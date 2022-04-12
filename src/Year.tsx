@@ -4,7 +4,7 @@ import Event from './Event'
 type TimelineEvent = {
     text: string,
     date: Date,
-    eventMarker?: string
+    eventMarker?: number
 }
 
   type YearProps = {

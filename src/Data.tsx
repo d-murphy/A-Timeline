@@ -14,7 +14,7 @@ export default getTimeline
 type TimelineEvent = {
     text: string, 
     date: Date, 
-    eventMarker?: string
+    eventMarker?: number
 }
 
 type TimelineInstance = {
@@ -35,7 +35,8 @@ function getMockData(id:number) : TimelineInstance {
             events: [
                 {
                     text: 'here is the first event in the timeline. here is the first event in the timeline. here is the first event in the timeline. here is the first event in the timeline', 
-                    date: new Date('1/4/2015')
+                    date: new Date('1/4/2015'),
+                    eventMarker: 128507
                 }, 
                 {
                     text: 'here is the second event in the timeline. here is the first event in the timeline. here is the first event in the timeline', 

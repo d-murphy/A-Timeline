@@ -6,7 +6,7 @@ type EventProps = {
     index:number, 
     month:number, 
     description:string, 
-    eventMarker?:string
+    eventMarker?:number
 }
 
 const monthNames = ["January", "February", "March", "April", "May", "June",
@@ -22,7 +22,7 @@ const Event = function(props:EventProps): JSX.Element {
                     <div className='event-body p-2 '>{props.description}</div>
                 </div>
                 <div className={`event-marker-${props.eventSide}`}>
-                    {props.eventMarker ? <img className={`event-marker-image-${props.eventSide}`} src={props.eventMarker} /> : <span className={`event-marker-no-image-${props.eventSide}`}>&#9632;</span>}
+                    {props.eventMarker ? <span role="img" className={`event-marker-image-${props.eventSide}`}>{String.fromCodePoint(props.eventMarker)}</span> : <span className={`event-marker-no-image-${props.eventSide}`}>&#9632;</span>}
                 </div>
             </div>
         )    
@@ -30,7 +30,7 @@ const Event = function(props:EventProps): JSX.Element {
         return (
             <div key={`${props.year}-${props.index}`} className={`event-section-${props.eventSide} event `}>
                 <div className={`event-marker-${props.eventSide}`}>
-                    {props.eventMarker ? <img className={`event-marker-image-${props.eventSide}`} src={props.eventMarker} /> : <span className={`event-marker-no-image-${props.eventSide}`}>&#9632;</span>}
+                    {props.eventMarker ? <span role="img" className={`event-marker-image-${props.eventSide}`}>{String.fromCodePoint(props.eventMarker)}</span> : <span className={`event-marker-no-image-${props.eventSide}`}>&#9632;</span>}
                 </div>
                 <div className='event-body'>
                     <div className={`event-header event-header-${props.eventSide}`}>{monthNames[props.month]}</div>
