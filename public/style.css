@@ -38,20 +38,46 @@ body {
 } */
 
 .event-marker-no-image-left,
-.event-marker-no-image-right {
+.event-marker-no-image-right, 
+.event-marker-image-left, 
+.event-marker-image-right {
     font-size: 35px;
     z-index: 5;
 }
 
-.event-marker-no-image-left {
+.event-marker-no-image-left,
+.event-marker-image-left {
     position: relative; 
     left: 17px;
 }
 
-.event-marker-no-image-right {
+.event-marker-image-left {
+    left: 27px
+}
+
+.event-marker-no-image-right, 
+.event-marker-image-right {
     position: relative;
     left: -14px;
 }
+
+.event-marker-image-right {
+    left: -24px;
+}
+
+.event-marker-image-left , 
+.event-marker-image-right  {
+    transition: all 0.3s;
+}
+
+.event-marker-image-left:hover  {
+    transform: scale(1.3) rotate(25deg);
+}
+
+.event-marker-image-right:hover {
+    transform: scale(1.3) rotate(-25deg);
+}
+
 
 
 .event-section-right {
