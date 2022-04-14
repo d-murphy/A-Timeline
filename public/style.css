@@ -26,17 +26,6 @@ body {
     align-items: center;
 }
 
-/* .event-marker-right {
-    padding-right: 20px;
-    position: 'relative';
-    left: '-20px';
-}
-
-
-.event-marker-left {
-    padding-left: 20px;
-} */
-
 .event-marker-no-image-left,
 .event-marker-no-image-right, 
 .event-marker-image-left, 
@@ -83,11 +72,11 @@ body {
 .event-section-right {
     position: relative;
     left: 50%;
-    max-width: 50%;
+    width: 50%;
 }
 
 .event-section-left {
-    max-width: 50%;
+    width: 50%;
 }
 
 .event-body {
@@ -136,8 +125,8 @@ body {
 }
 
 .event-header {
-    font-size: large;
-    padding-top: 10px;
+    font-size: x-large;
+    padding: 10px 0px 5px 0px;
 }
 
 .event-header-left {
@@ -151,4 +140,53 @@ body {
 
 .big-bottom-padding {
     padding-bottom: 200px;
+}
+
+.footer {
+    width: 100%; 
+    height: 200px; 
+    background-color: #f9f9fb;
+    z-index: 100;
+    position: relative;
+    display: grid;
+    grid-template-rows: 150px auto;
+    grid-template-columns: 300px auto 100px auto;
+    grid-template-areas: 
+      "logo  header side1 side2" 
+      "logo  side5 side3 side4";
+}
+
+.footer-logo {
+    grid-area: logo;
+    background-color: coral;
+}
+
+.footer-header {
+    grid-area: header;
+    background-color: firebrick;
+}
+
+.footer-side5 {
+    grid-area: side5;
+    background-color: fuchsia;
+}
+
+.footer-side4 {
+    grid-area: side4 ;
+    background-color: chartreuse;
+}
+
+.footer-side3 {
+    grid-area: side3 ;
+    background-color: floralwhite;
+}
+
+.footer-side2 {
+    grid-area: side2 ;
+    background-color: gold;
+}
+
+.footer-side1 {
+    grid-area: side1 ;
+    background-color: greenyellow;
 }
