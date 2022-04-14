@@ -26,6 +26,10 @@ body {
     align-items: center;
 }
 
+.event-text-container {
+    width: 100%;
+}
+
 .event-marker-no-image-left,
 .event-marker-no-image-right, 
 .event-marker-image-left, 
