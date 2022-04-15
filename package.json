@@ -1,7 +1,7 @@
 {
-  "name": "timeline-generator",
+  "name": "a-timeline",
   "version": "1.0.0",
-  "description": "timeline-generator",
+  "description": "A timeline",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/d-murphy/timeline-generator.git"
+    "url": "git+https://github.com/d-murphy/a-timeline.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/d-murphy/timeline-generator/issues"
+    "url": "https://github.com/d-murphy/a-timeline/issues"
   },
-  "homepage": "https://github.com/d-murphy/timeline-generator#readme",
+  "homepage": "https://github.com/d-murphy/a-timeline#readme",
   "dependencies": {
     "dotenv": "^16.0.0",
     "react": "^18.0.0",

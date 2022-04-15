@@ -18,7 +18,7 @@ module.exports = {
     ], 
   },
   output: {
-    filename: "bundle.js",
+    filename: "timeline-bundle.js",
     path: path.resolve("public")
   },
 }

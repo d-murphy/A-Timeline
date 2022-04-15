@@ -30,88 +30,93 @@ function getMockData(id:number) : TimelineInstance {
 
     const timelines: timelineLookup = {
         1: {
-            title: 'My first timeline', 
+            title: 'A timeline', 
             subtitle: 'Check out this cool timeline interface.',
             events: [
                 {
-                    text: 'here is the first event in the timeline. here is the first event in the timeline. here is the first event in the timeline. here is the first event in the timeline', 
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in eros ut justo accumsan rutrum id sed est. Vestibulum tincidunt, neque fermentum dignissim sodales, metus lorem', 
                     date: new Date('1/4/2015'),
-                    eventMarker: 128507
+                    eventMarker: 9200
                 }, 
                 {
-                    text: 'here is the second event in the timeline. here is the first event in the timeline. here is the first event in the timeline', 
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in eros ut justo accumsan rutrum id sed est. Vestibulum tincidunt, neque fermentum dignissim sodales, metus lorem', 
                     date: new Date('1/3/2015'),
-                    eventMarker: 128507
                 }, 
                 {
-                    text: 'here is the third event in the timeline. here is the first event in the timeline. here is the first event in the timeline.', 
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in eros ut justo accumsan rutrum id sed est. Vestibulum tincidunt, neque fermentum dignissim sodales, metus lorem', 
                     date: new Date('3/4/2016'),
                     eventMarker: 128507
                 }, 
                 {
-                    text: 'another event. here is the first event in the timeline. here is the first event in the timeline. here is the first event in the timeline', 
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in eros ut justo accumsan rutrum id sed est. Vestibulum tincidunt, neque fermentum dignissim sodales, metus lorem', 
                     date: new Date('3/10/2016')
                 }, 
                 {
-                    text: 'The FINAL event', 
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in eros ut justo accumsan rutrum id sed est. Vestibulum tincidunt, neque fermentum dignissim sodales, metus lorem', 
                     date: new Date('4/10/2016')
                 },                {
-                    text: 'here is the first event in the timeline. here is the first event in the timeline. here is the first event in the timeline. here is the first event in the timeline', 
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in eros ut justo accumsan rutrum id sed est. Vestibulum tincidunt, neque fermentum dignissim sodales, metus lorem', 
                     date: new Date('1/4/2017')
                 }, 
                 {
-                    text: 'here is the second event in the timeline. here is the first event in the timeline. here is the first event in the timeline', 
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in eros ut justo accumsan rutrum id sed est. Vestibulum tincidunt, neque fermentum dignissim sodales, metus lorem', 
+                    date: new Date('3/4/2017'),
+                    eventMarker: 9748
+                }, 
+                {
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in eros ut justo accumsan rutrum id sed est. Vestibulum tincidunt, neque fermentum dignissim sodales, metus lorem', 
                     date: new Date('3/4/2017')
                 }, 
                 {
-                    text: 'here is the third event in the timeline. here is the first event in the timeline. here is the first event in the timeline.', 
-                    date: new Date('3/4/2017')
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in eros ut justo accumsan rutrum id sed est. Vestibulum tincidunt, neque fermentum dignissim sodales, metus lorem', 
+                    date: new Date('3/10/2017'),
+                    eventMarker: 9918
                 }, 
                 {
-                    text: 'another event. here is the first event in the timeline. here is the first event in the timeline. here is the first event in the timeline', 
-                    date: new Date('3/10/2017')
-                }, 
-                {
-                    text: 'The FINAL event', 
-                    date: new Date('4/10/2018')
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in eros ut justo accumsan rutrum id sed est. Vestibulum tincidunt, neque fermentum dignissim sodales, metus lorem', 
+                    date: new Date('4/10/2018'),
+                    eventMarker: 127824
                 },
                 {
-                    text: 'here is the first event in the timeline. here is the first event in the timeline. here is the first event in the timeline. here is the first event in the timeline', 
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in eros ut justo accumsan rutrum id sed est. Vestibulum tincidunt, neque fermentum dignissim sodales, metus lorem', 
                     date: new Date('1/4/2015')
                 }, 
                 {
-                    text: 'here is the second event in the timeline. here is the first event in the timeline. here is the first event in the timeline', 
-                    date: new Date('3/4/2015')
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in eros ut justo accumsan rutrum id sed est. Vestibulum tincidunt, neque fermentum dignissim sodales, metus lorem', 
+                    date: new Date('3/4/2015'),
+                    eventMarker: 127853
                 }, 
                 {
-                    text: 'here is the third event in the timeline. here is the first event in the timeline. here is the first event in the timeline.', 
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in eros ut justo accumsan rutrum id sed est. Vestibulum tincidunt, neque fermentum dignissim sodales, metus lorem', 
                     date: new Date('3/4/2016')
                 }, 
                 {
-                    text: 'another event. here is the first event in the timeline. here is the first event in the timeline. here is the first event in the timeline', 
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in eros ut justo accumsan rutrum id sed est. Vestibulum tincidunt, neque fermentum dignissim sodales, metus lorem', 
                     date: new Date('3/10/2016')
                 }, 
                 {
-                    text: 'The FINAL event', 
-                    date: new Date('4/10/2016')
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in eros ut justo accumsan rutrum id sed est. Vestibulum tincidunt, neque fermentum dignissim sodales, metus lorem', 
+                    date: new Date('4/10/2016'),
+                    eventMarker: 127875
                 },                {
-                    text: 'here is the first event in the timeline. here is the first event in the timeline. here is the first event in the timeline. here is the first event in the timeline', 
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in eros ut justo accumsan rutrum id sed est. Vestibulum tincidunt, neque fermentum dignissim sodales, metus lorem', 
                     date: new Date('1/4/2017')
                 }, 
                 {
-                    text: 'here is the second event in the timeline. here is the first event in the timeline. here is the first event in the timeline', 
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in eros ut justo accumsan rutrum id sed est. Vestibulum tincidunt, neque fermentum dignissim sodales, metus lorem', 
+                    date: new Date('3/4/2017'),
+                    eventMarker: 127912
+                }, 
+                {
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in eros ut justo accumsan rutrum id sed est. Vestibulum tincidunt, neque fermentum dignissim sodales, metus lorem', 
                     date: new Date('3/4/2017')
                 }, 
                 {
-                    text: 'here is the third event in the timeline. here is the first event in the timeline. here is the first event in the timeline.', 
-                    date: new Date('3/4/2017')
-                }, 
-                {
-                    text: 'another event. here is the first event in the timeline. here is the first event in the timeline. here is the first event in the timeline', 
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in eros ut justo accumsan rutrum id sed est. Vestibulum tincidunt, neque fermentum dignissim sodales, metus lorem', 
                     date: new Date('3/10/2017')
                 }, 
                 {
-                    text: 'The FINAL event', 
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in eros ut justo accumsan rutrum id sed est. Vestibulum tincidunt, neque fermentum dignissim sodales, metus lorem', 
                     date: new Date('4/10/2018')
                 }
 
@@ -131,7 +136,7 @@ function getMockData(id:number) : TimelineInstance {
                     date: new Date('3/4/2015')
                 }, 
                 {
-                    text: 'This is the second thing to take place.', 
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in eros ut justo accumsan rutrum id sed est. Vestibulum tincidunt, neque fermentum dignissim sodales, metus lorem', 
                     date: new Date('3/4/2016')
                 }
             ]
